@@ -1,5 +1,5 @@
 // pages/cinema/index.js
-import QQMapWX from "../../utils/qqmap-wx-jssdk1.2 (2)/qqmap-wx-jssdk";
+import QQMapWX  from "../../utils/qqmap-wx-jssdk1.2/qqmap-wx-jssdk"
 var qqmapsdk;
 Page({
   /**
@@ -12,23 +12,24 @@ Page({
    */
   onLoad: function (options) {
     qqmapsdk = new QQMapWX({
-      key: "XRCBZ-QA2K4-ZDTUF-XNRVV-C54JT-PQFYN",
-    });
-    this.getTabBar().setData({
-      current: 3,
-    });
+      key: 'XRCBZ-QA2K4-ZDTUF-XNRVV-C54JT-PQFYN'
+  });
+    this.getTabBar()
+    .setData({
+      current:3
+    })
     wx.getLocation({
-      success(res) {
+      success(res){
         // console.log(res);
         qqmapsdk.search({
-          keyword: "影院",
-          location: `${res.latitude},${res.longitude}`,
-          success(res1) {
-            console.log(res1);
-          },
-        });
-      },
-    });
+          keyword:"影院",
+          location:`${res.latitude},${res.longitude}`,
+          success(res1){
+            // console.log(res1)
+          }
+        })
+      }
+    })
   },
 
   /**

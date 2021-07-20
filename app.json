@@ -1,9 +1,9 @@
 {
   "pages": [
     "pages/home/index",
-    "pages/cinema/index",
-    "pages/ticket/index",
     "pages/movie/index",
+    "pages/ticket/index",
+    "pages/cinema/index",
     "pages/main/index",
     "pages/login/index"
   ],

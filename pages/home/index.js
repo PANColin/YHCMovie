@@ -1,6 +1,5 @@
 // pages/home/index.js
-
-import QQMapWX from "../../utils/qqmap-wx-jssdk1.2 (2)/qqmap-wx-jssdk";
+import QQMapWX  from "../../utils/qqmap-wx-jssdk1.2/qqmap-wx-jssdk"
 var qqmapsdk;
 Page({
   /**
@@ -15,10 +14,7 @@ Page({
    */
   onLoad: function (options) {
     qqmapsdk = new QQMapWX({
-      key: "XRCBZ-QA2K4-ZDTUF-XNRVV-C54JT-PQFYN",
-    });
-    this.getTabBar().setData({
-      current: 0,
+        key: 'XRCBZ-QA2K4-ZDTUF-XNRVV-C54JT-PQFYN'
     });
     wx.getLocation({
       success: (res) => {
