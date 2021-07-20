@@ -1,6 +1,4 @@
-// pages/cinema/index.js
-import QQMapWX  from "../../utils/qqmap-wx-jssdk1.2/qqmap-wx-jssdk"
-var qqmapsdk;
+// pages/login/index.js
 Page({
 
   /**
@@ -14,25 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    qqmapsdk = new QQMapWX({
-      key: 'XRCBZ-QA2K4-ZDTUF-XNRVV-C54JT-PQFYN'
-  });
-    this.getTabBar()
-    .setData({
-      current:3
-    })
-    wx.getLocation({
-      success(res){
-        // console.log(res);
-        qqmapsdk.search({
-          keyword:"影院",
-          location:`${res.latitude},${res.longitude}`,
-          success(res1){
-            // console.log(res1)
-          }
-        })
-      }
-    })
+
   },
 
   /**

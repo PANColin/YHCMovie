@@ -1,6 +1,5 @@
 // pages/home/index.js
-
-import QQMapWX  from "../../utils/qqmap-wx-jssdk1.2 (2)/qqmap-wx-jssdk"
+import QQMapWX  from "../../utils/qqmap-wx-jssdk1.2/qqmap-wx-jssdk"
 var qqmapsdk;
 Page({
 
@@ -15,9 +14,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
     qqmapsdk = new QQMapWX({
-        key: 'OMABZ-OXN6I-VEHG3-53LGD-I6HL3-QZFBP'
+        key: 'XRCBZ-QA2K4-ZDTUF-XNRVV-C54JT-PQFYN'
     });
     var _this = this;
     this.getTabBar()
@@ -26,7 +24,7 @@ Page({
     })
     wx.getLocation({
       success(res){
-        console.log(res);
+        // console.log(res);
         qqmapsdk.reverseGeocoder({
           location:{
             latitude: res.latitude,
@@ -38,7 +36,7 @@ Page({
             _this.setData({
               city:res1.result.ad_info.city
             })
-          }
+          },
         })
       }
     })
