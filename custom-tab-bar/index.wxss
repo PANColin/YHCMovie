@@ -1,0 +1,24 @@
+/* custom-tab-bar/index.wxss */
+.tabBox{
+  height: 152rpx;
+  width: 100%;
+  background: url(http://doc.bufanui.com/uploads/a411524237/images/m_ab6bcc12252d7f508bc0c193a94ac6cd_r.png) no-repeat center;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.tabBox .item{
+  transform: translateY(16px);
+}
+.tabBox .item image{
+  width: 64rpx;
+  height: 64rpx;
+}
+.tabBox .item:nth-child(3){
+  transform: translateY(-4px);
+}
+.tabBox .item:nth-child(3) image{
+  width: 116rpx;
+  height: 116rpx;
+}

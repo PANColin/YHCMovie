@@ -1,0 +1,7 @@
+<!--custom-tab-bar/index.wxml-->
+<view class="tabBox">
+  <view wx:for="{{ list }}" class="item" data-path="{{ item.path }}" bindtap="goPage">
+    <image wx:if="{{ index == current }}" src="{{ item.selectedImg }}"></image>
+    <image wx:else src="{{ item.img }}"></image>
+  </view>
+</view>
