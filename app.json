@@ -1,12 +1,11 @@
 {
   "pages": [
-    "pages/main/index",
     "pages/home/index",
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/movie/index",
+    "pages/cinema/index",
     "pages/ticket/index",
-    "pages/cinema/index"
+    "pages/movie/index",
+    "pages/main/index",
+    "pages/login/index"
   ],
   "tabBar": {
     "custom": true,
@@ -33,7 +32,7 @@
   },
   "permission": {
     "scope.userLocation": {
-      "desc": "位置信息仅仅只用于页面展示" 
+      "desc": "位置信息仅仅只用于页面展示"
     }
   },
   "window": {
